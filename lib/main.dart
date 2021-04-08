@@ -11,21 +11,20 @@ class SelectedRangesCellsCustomization extends StatelessWidget {
       home: Scaffold(
         body: SafeArea(
           child: Card(
-              margin: const EdgeInsets.fromLTRB(50, 150, 50, 150),
-              child: SfDateRangePicker(
-                view: DateRangePickerView.month,
-                selectionMode: DateRangePickerSelectionMode.multiRange,
-                selectionTextStyle: const TextStyle(color: Colors.green),
-                startRangeSelectionColor: Colors.pink,
-                endRangeSelectionColor: Colors.pink,
-                rangeSelectionColor: Colors.pinkAccent,
-                rangeTextStyle: const TextStyle(
-                    color: Colors.white, fontSize: 15),
-              )
-
+            margin: const EdgeInsets.fromLTRB(50, 150, 50, 150),
+            child: SfDateRangePicker(
+              view: DateRangePickerView.month,
+              selectionMode: DateRangePickerSelectionMode.multiRange,
+              selectionTextStyle: const TextStyle(color: Colors.green),
+              startRangeSelectionColor: Colors.pink,
+              endRangeSelectionColor: Colors.pink,
+              rangeSelectionColor: Colors.pinkAccent,
+              rangeTextStyle:
+                  const TextStyle(color: Colors.white, fontSize: 15),
+            ),
           ),
         ),
-        // This trailing comma makes auto-formatting nicer for build methods.
-      ));
+      ),
+    );
   }
 }
